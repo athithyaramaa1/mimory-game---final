@@ -1,0 +1,274 @@
+body{
+  border: border-box;
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+.button {
+  border-radius: 50%;
+  font-size: 1.5rem;
+  background-color: rgb(255, 85, 0);
+  cursor: pointer;
+}
+
+#switches {
+  margin-left: 84px;
+  margin-top: 106px;
+}
+
+#color-of-i{
+  color: rgb(255, 1, 255);
+}
+
+.text2 {
+  font-family: "Original Surfer", cursive;
+  margin-left: 90px;
+  margin-top: 5px;
+}
+
+#title {
+  font-family: "Original Surfer", cursive;
+  position: absolute;
+  font-size: 40px;
+  margin-left: 35px;
+  margin-top: 40px;
+}
+
+.onButton{
+  width: 162px;
+  margin-top: -260px;
+  margin-left: 150px;
+  padding: -60px;
+  cursor: pointer;
+}
+
+#turn {
+  background: #302f2f;
+  color: rgb(255, 0, 0);
+  font-family: courier;
+  font-size: 35px;
+  height: 35px;
+  width: 60px;
+  margin-left: 90px;
+  margin-top: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+/* .Player{
+color: aqua;
+} */
+
+#outer-circle {
+  background: aqua;
+  border-radius: 99%;
+  height: 500px;
+  width: 500px;
+  border-style: solid;
+  border-width: 10px;
+  margin: auto;
+  margin-top: 70px;
+  box-shadow: 9px 9px 16px 16px #adadad;
+  /* transform: rotate(55deg) translate(45px, 10px) skew(-15deg, -15deg); */
+  /* transform: rotate(-45deg) translate(10px) skew(15deg, 25deg); */
+
+
+}
+
+#topleft {
+  height: 250px;
+  width: 250px;
+  border-radius: 250px 0 0 0;
+  background: darkblue;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-width: 5px;
+  box-sizing: border-box;
+}
+
+#topright {
+  height: 250px;
+  width: 250px;
+  border-radius: 0 250px 0 0;
+  background: goldenrod;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: 250px;
+  border-style: solid;
+  border-width: 5px;
+  box-sizing: border-box;
+}
+
+.store{
+  display: flex;
+  color: rgb(255, 0, 128);
+  margin-top: -20px;
+}
+
+#store-display{
+  color: aliceblue;
+  margin-left: 15px;
+}
+
+#bottomleft {
+  height: 250px;
+  width: 250px;
+  border-radius: 0 0 0 250px;
+  background: darkred;
+  top: 50%;
+  left: 50%;
+  margin: 0px -280px -20px 0px;
+  border-style: solid;
+  border-width: 5px;
+  box-sizing: border-box;
+}
+
+#bottomright {
+  height: 250px;
+  width: 250px;
+  border-radius: 0 0 250px 0;
+  background: darkgreen;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0px 0px 250px;
+  border-style: solid;
+  border-width: 5px;
+  box-sizing: border-box;
+}
+
+#inner-circle {
+  background: grey;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  border-style: solid;
+  border-width: 10px;
+  top: 50%;
+  left: 50%;
+  margin: -375px 0px 0px 130px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  body {
+    border: border-box;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+  }
+
+  .button {
+    border-radius: 50%;
+    font-size: 0.8rem;
+    background-color: rgb(255, 85, 0);
+    cursor: pointer;
+    width: 40%;
+    margin-top: 22px;
+  }
+
+  #switches {
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  #color-of-i {
+    color: rgb(255, 1, 255);
+  }
+
+  .text2 {
+    font-family: "Original Surfer", cursive;
+    text-align: center;
+    margin-top: -5px;
+    margin-left: 0px;
+  }
+
+  #title {
+    font-family: "Original Surfer", cursive;
+    font-size: 20px;
+    text-align: center;
+    margin: 7px auto; 
+    width: 100%;
+  }
+
+  .onButton {
+    width: 80px;
+    margin-top: -20px;
+    cursor: pointer;
+  }
+
+  #turn {
+    font-size: 20px;
+    height: 20px;
+    width: 50px;
+    margin: 5px auto;
+    text-align: center;
+  }
+
+  .store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 0, 128);
+    margin-top: 20px;
+  }
+
+  #store-display {
+    color: aliceblue;
+    margin-top: 10px;
+  }
+
+  #outer-circle {
+    height: 250px;
+    width: 250px;
+    margin: 50px auto; 
+    position: relative;
+  }
+
+  #topleft, #topright, #bottomleft, #bottomright {
+    height: 125px;
+    width: 125px;
+    position: absolute;
+  }
+
+  #topleft {
+    border-radius: 125px 0 0 0;
+    background: darkblue;
+    top: 0;
+    left: 0;
+  }
+
+  #topright {
+    border-radius: 0 125px 0 0;
+    background: goldenrod;
+    top: 100%;
+    left: -50%;
+  }
+
+  #bottomleft {
+    border-radius: 0 0 0 125px;
+    background: darkred;
+    bottom: 0;
+    left: 0;
+  }
+
+  #bottomright {
+    border-radius: 0 0 125px 0;
+    background: darkgreen;
+    top: 150%;
+    left: -50%;
+  }
+
+  #inner-circle {
+    height: 125px;
+    width: 125px;
+    background: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -62.5px 0 0 -62.5px; 
+}

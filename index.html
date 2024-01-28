@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="assets/png-transparent-incandescent-light-bulb-computer-icons-symbol-bulb-logo-text-trademark-logo.png"
+      type="image/png"
+    />
+    <title>MiMORY</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video autoplay id="myVideo" loop muted onclick="playVideo()">
+      <source src="assets/Index page background.mp4" type="video/mp4" />
+    </video>
+
+    <audio autoplay loop id="myAudio">
+      <source src="assets/rain-and-nostalgia-version-60s-10820.mp3" type="audio/mp3"/>
+    </audio>
+
+    <header class="container">
+      <a class="logo"
+        ><img src="assets/VAR SOFT-TECH PRO (1) (1).png" alt="" class="var-logo"
+      /></a>
+      <ul>
+        <li><a>Home</a></li>
+        <li><a onclick="about()">About</a></li>
+        <li><a onclick="contact()">Contact Me</a></li>
+        <li><a onclick="Login()" class="login">Play Game 😊</a></li>
+      </ul>
+    </header>
+
+    <main class="login-form">
+      <div onclick="Login()" class="close-login-form">&times;</div>
+      <form action="">
+        <h1 class="mimory">M<span>i</span>MORY</h1>
+        <div class="input-group">
+          <input type="text" placeholder="Name" required/>
+          <label>Name</label>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="username" name="username" required/>
+          <label>NickName</label>
+        </div>
+        <div>
+          <button class="login-button" onclick="redirectToGame()" id="next-pg">
+            Play Game!
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
